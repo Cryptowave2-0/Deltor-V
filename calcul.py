@@ -458,7 +458,7 @@ def create():
 
     menubar = Menu(window)
 
-    menubar.add_cascade(label="Quitter", command=window.quit)
+    menubar.add_cascade(label="Quitter", command=wind.destroy()) #kills the process
     window.config(menu=menubar)
 
     window.mainloop()
