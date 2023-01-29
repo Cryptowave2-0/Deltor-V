@@ -42,27 +42,49 @@ wind.config(background='#1C2833')
 
 def edit():
     def recupere():
-        e1v1 = int(entree1.get())
-        e1v2 = int(entree2.get())
-        e1v3 = int(entree3.get())
-        e1v4 = int(entree4.get())
-        e2v1 = int(entree5.get())
-        e2v2 = int(entree6.get())
-        e2v3 = int(entree7.get())
-        e2v4 = int(entree8.get())
-        e3v1 = int(entree9.get())
-        e3v2 = int(entree10.get())
-        e3v3 = int(entree11.get())
-        e3v4 = int(entree12.get())
-        e4v1 = int(entree13.get())
-        e4v2 = int(entree14.get())
-        e4v3 = int(entree15.get())
-        e4v4 = int(entree16.get())
-        e5v1 = int(entree17.get())
-        e5v2 = int(entree18.get())
-        e5v3 = int(entree19.get())
-        mcu = str(entree21.get())
-        e5v4 = int(entree20.get())
+        if entree1.get() == str:
+            return
+        else:
+            me1 = int(entree1.get())
+            mv1 = int(entree2.get())
+            mt1 = int(entree3.get())
+            ve1 = int(entree4.get())
+            if entree00.get() == int or '':
+                return
+            else :
+                name = str(entree00.get())
+            if entree21.get() == str:
+                return
+            else :
+                mcu = str(entree21.get())
+            if entree5.get() == str:
+                return
+            else:
+                me2 = int(entree5.get())
+                mv2 = int(entree6.get())
+                mt2 = int(entree7.get())
+                ve2 = int(entree8.get())
+                if entree9.get() == str:
+                    return
+                else:
+                    me3 = int(entree9.get())
+                    mv3 = int(entree10.get())
+                    mt3 = int(entree11.get())
+                    ve3 = int(entree12.get())
+                    if entree13.get() == str:
+                        return
+                    else:
+                        me4 = int(entree13.get())
+                        mv4 = int(entree14.get())
+                        mt4 = int(entree15.get())
+                        ve4 = int(entree16.get())
+                        if entree17.get() == str:
+                            return
+                        else:
+                            me5 = int(entree17.get())
+                            mv5 = int(entree18.get())
+                            mt5 = int(entree19.get())
+                            ve5 = int(entree20.get())
 
     window = Tk()
     window.title("Delta-V")
@@ -458,7 +480,7 @@ def create():
 
     menubar = Menu(window)
 
-    menubar.add_cascade(label="Quitter", command=window.quit)
+    menubar.add_cascade(label="Quitter", command=Tk.destroy)
     window.config(menu=menubar)
 
     window.mainloop()
